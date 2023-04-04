@@ -1,1 +1,15 @@
-﻿
+﻿.validation-summary-errors {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.validation-summary-errors ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: darkolivegreen;
+}

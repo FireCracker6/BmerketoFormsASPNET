@@ -1,15 +1,13 @@
 ﻿@model RegisterViewModel
 
 @{ ViewData["Title"] = "Registrera nytt konto"; }
-<style>
-	.form-control:focus {
-		box-shadow: none;
-		border-color: darkolivegreen;
-	}
-</style>
+
 <div class="d-flex justify-content-center">
 	<div class="col-6">
 		<form method="post" novalidate>
+
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
 			<div class="mb-3">
 				<label asp-for="FirstName" class="form-label"></label>
 				<input asp-for="FirstName" class="form-control" id="firstName-input" />
