@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Svart\\Source\\Repos\\Webbutveckling\\ViewsAndPartialViewsForms\\WebAppForm\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Svart\\Source\\Repos\\Webbutveckling\\ViewsAndPartialViewsForms\\WebAppForm\\wwwroot\\css\\site.min.css",
+      "PackagePath": "staticwebassets\\css\\site.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Svart\\Source\\Repos\\Webbutveckling\\ViewsAndPartialViewsForms\\WebAppForm\\wwwroot\\css\\site.scss",
+      "PackagePath": "staticwebassets\\css\\site.scss"
+    },
+    {
+      "Id": "C:\\Users\\Svart\\Source\\Repos\\Webbutveckling\\ViewsAndPartialViewsForms\\WebAppForm\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Svart\\Source\\Repos\\Webbutveckling\\ViewsAndPartialViewsForms\\WebAppForm\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebAppForm.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebAppForm.props",
+      "PackagePath": "build\\WebAppForm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebAppForm.props",
+      "PackagePath": "buildMultiTargeting\\WebAppForm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebAppForm.props",
+      "PackagePath": "buildTransitive\\WebAppForm.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

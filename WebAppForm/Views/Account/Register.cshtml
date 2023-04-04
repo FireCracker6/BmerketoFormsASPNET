@@ -1,0 +1,91 @@
+﻿@model RegisterViewModel
+
+@{ ViewData["Title"] = "Registrera nytt konto"; }
+<style>
+	.form-control:focus {
+		box-shadow: none;
+		border-color: darkolivegreen;
+	}
+</style>
+<div class="d-flex justify-content-center">
+	<div class="col-6">
+		<form method="post" novalidate>
+			<div class="mb-3">
+				<label asp-for="FirstName" class="form-label"></label>
+				<input asp-for="FirstName" class="form-control" id="firstName-input" />
+				<small>
+					<span asp-validation-for="FirstName" class="text-danger"></span>
+				</small>
+				<small>
+				<span id="firstName-validation-error" class="text-danger"></span>
+				</small>
+			</div>
+			<div class="mb-3">
+				<label asp-for="LastName" class="form-label"></label>
+				<input asp-for="LastName" class="form-control" id="lastName-input" />
+				<small><span asp-validation-for="LastName" class="text-danger"></span>
+				</small>
+
+				
+				<span id="lastName-validation-error" class="text-danger"></span>
+			
+			</div>
+			<div class="mb-3">
+				<label asp-for="Email" class="form-label"></label>
+				<input asp-for="Email" class="form-control box-shadow-none" id="email-input" />
+				<small>
+					<span asp-validation-for="Email" class="text-danger"></span>
+				</small>
+
+				<small>
+				<span id="email-validation-error" class="text-danger"></span>
+				</small>
+			</div>
+			<div class="mb-3">
+				<label asp-for="Password" class="form-label"></label>
+				<input asp-for="Password" class="form-control" id="password-input" />
+				<small>
+					<span asp-validation-for="Password" class="text-danger"></span>
+				</small>
+
+				<small>
+				<span id="password-validation-error" class="text-danger"></span>
+				</small>
+			</div>
+			<div class="mb-3">
+				<label asp-for="ConfirmPassword" class="form-label"></label>
+				<input asp-for="ConfirmPassword" class="form-control" id="confirm-password-input" />
+				<span id="confirm-password-validation-error" class="text-danger"></span>
+				<small>
+					<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+				</small>
+				
+			</div>
+			<div class="mb-3">
+				<label asp-for="StreetName" class="form-label"></label>
+				<input asp-for="StreetName" class="form-control" />
+				<small>
+					<span asp-validation-for="StreetName" class="text-danger"></span>
+				</small>
+			</div>
+			<div class="mb-3">
+				<label asp-for="PostalCode" class="form-label"></label>
+				<input asp-for="PostalCode" class="form-control" />
+				<small>
+					<span asp-validation-for="PostalCode" class="text-danger"></span>
+				</small>
+			</div>
+			<div class="mb-3">
+				<label asp-for="City" class="form-label"></label>
+				<input asp-for="City" class="form-control" />
+				<small>
+					<span asp-validation-for="City" class="text-danger"></span>
+				</small>
+			</div>
+			<div class="d-grid" >
+			<button type="submit" class="btn btn-success mt-2 ">REGISTRERA</button>
+			</div>
+		</form>
+		<div class="validation-summary-errors"></div> <!-- Move this outside the form element -->
+	</div>
+</div>
