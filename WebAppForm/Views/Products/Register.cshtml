@@ -1,0 +1,47 @@
+﻿@model ProductRegistrationViewModel
+@{
+	ViewData["Title"] = "Registrera ny Produkt";
+}
+
+<div class="d-flex justify-content-center">
+	<div class="col-6">
+
+		<form method="post" novalidate>
+
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+			<div class="mb-3">
+				<label asp-for="ProductName" class="form-label"></label>
+				<input asp-for="ProductName" class="form-control" />
+				<small> <span asp-validation-for="ProductName" class="text-danger">
+				</span></small>
+			</div>
+
+			<div class="mb-3">
+				<label asp-for="ProductPrice" class="form-label"></label>
+				<input asp-for="ProductPrice" class="form-control" />
+				<small>
+					<span asp-validation-for="ProductPrice" class="text-danger">
+					</span>
+				</small>
+			</div>
+
+			<div class="mb-3">
+				<label asp-for="ProductDescription" class="form-label"></label>
+				<textarea asp-for="ProductDescription" class="form-control" rows="4"></textarea>
+				<small>
+					<span asp-validation-for="ProductDescription" class="text-danger">
+					</span>
+				</small>
+			</div>
+
+
+		<div class="d-grid mt-2">
+			<button type="submit" class="btn btn-success">SKAPA</button>
+		</div>
+
+		</form>
+
+	</div>
+
+</div>
